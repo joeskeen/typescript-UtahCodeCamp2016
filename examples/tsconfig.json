@@ -1,5 +1,10 @@
 {
 	"compilerOptions": {
-		"target": "ES5"
-	}
+		"target": "ES2015",
+		"module": "commonjs",
+		"inlineSourceMap": true
+	},
+	"files": [
+		"nodeSample.ts"
+	]
 }

@@ -1,18 +1,19 @@
-/// <reference path="typings/angularjs/angular.d.ts" />
+//⁄ <reference path="typings/angularjs/angular.d.ts" />
 
 namespace demo {
 	export interface IMyService {
+		/** the number of times someone said Hello */
 		helloCount1: number;
 		sayHello(): string;
 	}
-	
+
 	class MyService implements IMyService {
 		private _helloCount = 0;
-		
+
 		get helloCount1() {
 			return this._helloCount;
 		}
-		
+
 		sayHello(): string {
 			this.helloCount1++;
 			return `hello for the ${this.helloCount1} time`;

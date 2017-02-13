@@ -39,13 +39,13 @@
 
 	<body>
 		<div style="position: absolute; left: 15px; bottom: 15px; z-index: 100; width: auto; display: flex; flex-flow: row; font-family: sans-serif">
-			<img src="http://conf.utahjs.com/assets/img/logo.png" style="vertical-align: middle" />
+			<img src="http://utahcodecamp.com/Images/Logo.png" style="vertical-align: middle" />
 			<div class="spacer"></div>
 			<div style="vertical-align: middle; margin-top: auto; margin-bottom: auto;">
-				<span style="color: red; font-weight: bold; font-family: sans-serif;">2015 UtahJS Conference</span><br />
+				<span style="color: red; font-weight: bold; font-family: sans-serif;">Utah Code Camp</span><br />
 				<i style="color: darkgray; font-size: small">
-					Friday September 25, 2015<br />
-					Downtown Salt Lake City Library
+					Saturday April 16th, 2016<br />
+					University of Utah
 				</i>
 			</div>
 		</div>
@@ -53,9 +53,9 @@
 			<span id="timeRemaining"></span>
 			<script type="text/javascript">
 				var timeRemaining = document.getElementById('timeRemaining');
-				var endTime = new Date(2015, 8, 25, 15, 20, 0).getTime();
+				var endTime = new Date(2016, 3, 16, 12, 20, 0).getTime();
 				updateTime();
-				
+
 				function updateTime() {
 					var now = new Date().getTime();
 					var remaining = endTime - now;
@@ -72,6 +72,7 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
+				<section><img src="./media/sponsors.png" alt="Our Sponsors"></section>
 				<section>
 					<h1>Using TypeScript</h1>
 					<h3>in your JavaScript projects</h3>
@@ -94,8 +95,8 @@
 					</section>
 					<section>
 						<h3>Places I've worked for</h3>
-						
-						<img data-src="http://cdn.practicelink.com/content/clientimages/2122/intermountainhealthcare.jpg" 
+
+						<img data-src="http://cdn.practicelink.com/content/clientimages/2122/intermountainhealthcare.jpg"
 							 style="height: 150px; width: auto;" />
 						<div style="display: flex; flex-flow: row;">
 							<div style="flex:1"></div>
@@ -134,12 +135,12 @@
 							<img data-src="https://tse2.mm.bing.net/th?id=JN.GRPyESnQSDTc9cqbL5XuPA&pid=15.1" style="height:55px; vertical-align: middle;"/>
 							<span style="font-size: smaller">DefinitelyTyped top 100 contributors</span>
 						</div>
-						<img style="height: 100px; width: auto; border: 0; background: none;" 
+						<img style="height: 100px; width: auto; border: 0; background: none;"
 							 data-src="https://hackhands.com/assets/branding/hackhands_ps_white.svg" /><br />
-						<a style="font-size: smaller" href="https://hackhands.com/joeskeen/">https://hackhands.com/joeskeen/</a>	
+						<a style="font-size: smaller" href="https://hackhands.com/joeskeen/">https://hackhands.com/joeskeen/</a>
 					</section>
 				</section>
-				
+
 				<section>
 					<h2>So... What is TypeScript?</h2>
 					<section>
@@ -157,22 +158,22 @@
 						</div>
 					</section>
 				</section>
-				
+
 				<section>
 					<h2>We don't need no stinking types in JavaScript!</h2>
 				</section>
-				
+
 				<section>
 					<h2 class="fragment">There are already types in JavaScript!</h2>
 				</section>
-				
+
 				<section>
 					<section>
-						<img src="https://tse1.mm.bing.net/th?id=JN.sMY6U0xuu2EfxeIb0GKsnQ&pid=15.1" />
+						<img src="./media/whaaa.jpg" />
 					</section>
 				</section>
-				
-				<section>	
+
+				<section>
 					<section>
 						<ul class="fragment">
 							<li>boolean</li>
@@ -184,17 +185,17 @@
 						<h3 class="fragment">Types are not <i>exposed</i> through the language.</h3>
 					</section>
 				</section>
-				
+
 				<section>
 					<blockquote>
 						TypeScript provides a <i>gradual</i> typing system for typing <u>where you need it</u>.
 					</blockquote>
 				</section>
-				
+
 				<section>
 					<video src="media/TypeScript_MiskoAndBrad.mp4" controls="true"></video>
 				</section>
-				
+
 				<section>
 					<h2>Why?</h2>
 					<section>
@@ -206,37 +207,94 @@
 						<img src="media/dog_big.png" style="width: 50%" />
 					</section>
 				</section>
-				
+
 				<section>
 					<h2>Why?</h2>
 					<h4>Low barrier to entry</h4>
 					<p>Your existing JavaScript code is already valid TypeScript</p>
 				</section>
-				
+
 				<section>
 					<img src="media/editorSupport.png" style="width: 75%" />
 				</section>
-				
+
 				<section>
 					<img src="media/definitelyTyped.png" style="width: 75%;" />
 					<h4><a href="https://github.com/borisyankov/DefinitelyTyped" target="new">https://github.com/borisyankov/DefinitelyTyped</a></h4>
 					<h4><a href="http://definitelytyped.org/tsd/" target="new">http://definitelytyped.org/tsd/</a></h4>
+					<h4><a href="https://channel9.msdn.com/events/Build/2016/B881" target="new">https://channel9.msdn.com/events/Build/2016/B881</a></h4>
+				</section>
+
+				<section>
+					<h4>Enough talk, let's see code!</h4>
+					<img src="http://www.helpingwritersbecomeauthors.com/wp-content/uploads/2015/07/Kung-Fu-Panda-Dream-Prologue-Po-Enough-Talk-Lets-Fight.jpg" style="width: 75%" />
 				</section>
 				
 				<section>
-					<h4>Enough talk, let's see code!</h4>
-					<img src="http://cdn.hark.com/images/000/307/482/307482/original.jpg" style="width: 75%" />
+					<h3>How much does the editor know about your JS code?</h3>
+					<h5>VSCode</h5>
+					<div class="stretch">
+						<monaco-editor language="javascript" url="examples/my.js" reference='["./typings/browser/ambient/jquery/index.d.ts"]'></monaco-editor>
+					</div>
 				</section>
 				
+				<section>
+					<section>
+						<h3>Some Sample JavaScript Code</h3>
+						<div class="stretch">
+							<monaco-editor language="javascript" url="examples/sample.js"></monaco-editor>
+						</div>
+					</section>	
+					<section>
+						<h3>The Same JavaScript Code as TypeScript</h3>
+						<div class="stretch">
+							<monaco-editor language="typescript" url="examples/sample.js"></monaco-editor>
+						</div>
+					</section>
+				</section>
+				
+				
+				<section>
+					<div class="stretch">
+						<monaco-editor language="typescript" url="examples/jquery.ts" reference='["./typings/browser/ambient/jquery/index.d.ts"]'></monaco-editor>
+					</div>
+				</section>
+				
+				<section>
+					<div class="stretch">
+						<monaco-editor language="typescript" url="examples/angular.ts" 
+								reference='["./typings/browser/ambient/jquery/index.d.ts", "./typings/browser/ambient/angular/index.d.ts", "./examples/myService.ts"]'>
+						</monaco-editor>
+					</div>
+				</section>
+				
+				<section>
+					<div class="stretch">
+						<monaco-editor language="typescript" url="examples/myService.ts" 
+								reference='["./typings/browser/ambient/jquery/index.d.ts", "./typings/browser/ambient/angular/index.d.ts"]'>
+						</monaco-editor>
+					</div>
+				</section>
+				
+				<section>
+					<div class="stretch">
+						<monaco-editor language="typescript" url="examples/nodeSample.ts" 
+								reference='["./typings/main/ambient/node/index.d.ts"]'>
+						</monaco-editor>
+					</div>
+				</section>
+
 				<section>
 					<h2>Questions</h2>
 				</section>
-				
+
 				<section>
 					<h2>The End</h2>
 					<h4>https://github.com/joeskeen</h4>
 					<h4>https://hackhands.com/joeskeen</h4>
 				</section>
+
+				<section><img src="./media/sponsors.png" alt="Our Sponsors"></section>
 			</div>
 		</div>
 
@@ -244,7 +302,6 @@
 		<script src="js/reveal.js"></script>
 
 		<script>
-
 			// Full list of configuration options available at:
 			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
@@ -261,9 +318,19 @@
 					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/monaco/monaco-plugin.js', async: true },
 					{ src: 'plugin/zoom-js/zoom.js', async: true },
 					{ src: 'plugin/notes/notes.js', async: true }
-				]
+				],
+
+				keyboard: {
+					27: null,
+				},
+
+				monaco: {
+					theme: 'vs-dark',
+					fontSize: 20
+				}
 			});
 
 		</script>

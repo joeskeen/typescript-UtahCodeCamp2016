@@ -23,7 +23,6 @@
   },
   "dependencies": {
     "express": "^2.5.11",
-    "monaco-editor": "^0.5.1",
     "mustache": "~0.7.2",
     "socket.io": "~0.9.16",
     "typescript": "^1.8.10",
